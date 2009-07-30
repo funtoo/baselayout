@@ -2,10 +2,7 @@
 # Copyright 2006-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 #
-# We've moved the installation logic from Gentoo ebuild into a generic
-# Makefile so that the ebuild is much smaller and more simple.
-# It also has the added bonus of being easier to install on systems
-# without an ebuild style package manager.
+# The Makefile is deprecated and no longer used. Kept for reference only.
 
 PKG = $(shell sed -n '/^\*/s:\*\([^ ]*\).*:\1:p' ChangeLog)
 
