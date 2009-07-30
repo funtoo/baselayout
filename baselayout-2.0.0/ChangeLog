@@ -1,0 +1,8 @@
+# ChangeLog for Gentoo Base System files
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPLv2
+
+*baselayout-2.0.0 (22 Mar 2008)
+
+  22 Mar 2008; Mike Frysinger <vapier@gentoo.org>:
+  Now baselayout is just for base files.  All of the init stuff has been forked
+  into OpenRC.  For older changelogs, consult svn.
