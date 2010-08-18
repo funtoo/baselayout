@@ -1,5 +1,28 @@
-# ChangeLog for Gentoo Base System files
-# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPLv2
+
+*baselayout-2.1.8 (17 Aug 2010)
+
+  17 Aug 2010; Daniel Robbins <drobbins@funtoo.org> +baselayout-2.1.8.ebuild:
+  modprobe.d conf suffixes were accidentally dropped from ebuild - 
+  this fixes that issue.
+
+*baselayout-2.1.7 (16 Aug 2010)
+
+  16 Aug 2010; Daniel Robbins <drobbins@funtoo.org> +baselayout-2.1.7.ebuild:
+  New baselayout that enables UTF-8 by default (but preserves standard
+  LC_COLLATE order so default 'ls' output is less weird.)
+
+*baselayout-2.1.1 (01 Aug 2009)
+
+  01 Aug 2009; Daniel Robbins <drobbins@funtoo.org> +baselayout-2.1.1.ebuild:
+  Add .conf suffixes to modprobe.d files.
+
+*baselayout-2.1 (31 Jul 2009)
+
+  31 Jul 2009; Daniel Robbins <drobbins@funtoo.org> +baselayout-2.1.ebuild:
+  new baselayout ebuild - rewritten quite a bit - reduced device nodes, more
+  .keep files, various changes in core files including an /etc/fstab that
+  contains a working sample config with /dev/sda{1,2,3} as boot, swap and
+  root respectively. /etc/issue* intentionally removed.
 
 *baselayout-2.0.0 (22 Mar 2008)
 
