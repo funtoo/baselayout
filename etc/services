@@ -975,6 +975,8 @@ sgi-eventmond	5553/tcp			# SGI Eventmond Port
 sgi-eventmond	5553/udp
 sgi-esphttp	5554/tcp			# SGI ESP HTTP
 sgi-esphttp	5554/udp
+amqp            5672/tcp			# AMQP
+amqp            5672/udp                        # AMQP
 cvsup		5999/tcp			# CVSup
 cvsup		5999/udp
 x11		6000/tcp			# X Window System
