@@ -15,10 +15,12 @@ uucp::14:uucp
 console::17:
 audio::18:
 cdrom::19:
+dialout::20:
 tape::26:root
 video::27:root
 cdrw::80:
 usb::85:
+input::97:
 users::100:games
 portage::250:portage
 utmp:x:406:
