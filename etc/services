@@ -701,6 +701,8 @@ concurrent-lm	1648/tcp
 concurrent-lm	1648/udp
 kermit		1649/tcp
 kermit		1649/udp
+groupwise	1677/tcp
+groupwise	1677/udp
 l2tp		1701/tcp
 l2tp		1701/udp
 h323gatedisc	1718/tcp
@@ -755,8 +757,8 @@ x25-svc-port	1998/tcp			# cisco X.25 service (XOT)
 x25-svc-port	1998/udp
 tcp-id-port	1999/tcp			# cisco identification port
 tcp-id-port	1999/udp
-cisco-sccp	2000/tcp	sieve		# Cisco SCCP
-cisco-sccp	2000/udp	sieve
+cisco-sccp	2000/tcp			# Cisco SCCP
+cisco-sccp	2000/udp
 nfs		2049/tcp			# Network File System
 nfs		2049/udp
 radsec		2083/tcp			# Secure Radius Service
@@ -915,6 +917,8 @@ xgrid		4111/tcp			# Mac OS X Server Xgrid
 xgrid		4111/udp
 bzr		4155/tcp			# Bazaar Version Control System
 bzr		4155/udp			# Bazaar version control system
+sieve		4190/tcp			# ManageSieve Protocol
+sieve		4190/udp
 rwhois		4321/tcp			# Remote Who Is
 rwhois		4321/udp
 epmd		4369/tcp			# Erlang Port Mapper Daemon
@@ -975,8 +979,6 @@ sgi-eventmond	5553/tcp			# SGI Eventmond Port
 sgi-eventmond	5553/udp
 sgi-esphttp	5554/tcp			# SGI ESP HTTP
 sgi-esphttp	5554/udp
-amqp            5672/tcp			# AMQP
-amqp            5672/udp                        # AMQP
 cvsup		5999/tcp			# CVSup
 cvsup		5999/udp
 x11		6000/tcp			# X Window System
@@ -1059,6 +1061,10 @@ cba8		9593/tcp			# LANDesk Management Agent
 cba8		9593/udp
 davsrc		9800/tcp			# WebDav Source Port
 davsrc		9800/udp
+sqlexec		9088/tcp			# IBM Informix SQL Interface
+sqlexec		9088/udp
+sqlexec-ssl	9089/tcp			# IBM Informix SQL Interface - Encrypted
+sqlexec-ssl	9089/udp
 sd		9876/tcp			# Session Director
 sd		9876/udp
 cyborg-systems	9888/tcp			# CYBORG Systems
@@ -1152,6 +1158,8 @@ afbackup	2988/udp
 fax		4557/tcp			# FAX transmission service        (old)
 rplay		5555/tcp			# RPlay audio service
 rplay		5555/udp
+amqp            5672/tcp                        # AMQP
+amqp            5672/udp                        # AMQP
 canna		5680/tcp			# Canna (Japanese Input)
 x11-ssh		6010/tcp	x11-ssh-offset
 x11-ssh		6010/udp	x11-ssh-offset

@@ -7,7 +7,7 @@
 #
 
 ip	0	IP		# internet protocol, pseudo protocol number
-#hopopt	0	HOPOPT		# hop-by-hop options for ipv6
+hopopt	0	HOPOPT		# hop-by-hop options for ipv6
 icmp	1	ICMP		# internet control message protocol
 igmp	2	IGMP		# internet group management protocol
 ggp	3	GGP		# gateway-gateway protocol
@@ -40,7 +40,7 @@ iso-tp4	29	ISO-TP4		# ISO Transport Protocol Class 4
 netblt	30	NETBLT		# Bulk Data Transfer Protocol
 mfe-nsp	31	MFE-NSP		# MFE Network Services Protocol
 merit-inp	32	MERIT-INP	# MERIT Internodal Protocol
-sep	33	SEP		# Sequential Exchange Protocol
+dccp	33	DCCP		# Datagram Congestion Control Protocol [RFC4340]
 3pc	34	3PC		# Third Party Connect Protocol
 idpr	35	IDPR		# Inter-Domain Policy Routing Protocol
 xtp	36	XTP		# Xpress Tranfer Protocol
@@ -55,7 +55,7 @@ ipv6-frag	44	IPv6-Frag	# Fragment Header for IPv6
 idrp	45	IDRP		# Inter-Domain Routing Protocol
 rsvp	46	RSVP		# Reservation Protocol
 gre	47	GRE		# General Routing Encapsulation
-mhrp	48	MHRP		# Mobile Host Routing Protocol
+dsr	48	DSR		# Dynamic Source Routing Protocol
 bna	49	BNA		# BNA
 esp	50	ESP		# encapsulating security payload
 ah	51	AH		# authentication header
@@ -125,7 +125,7 @@ pgm	113	PGM		# PGM Reliable Transport Protocol
 l2tp	115	L2TP		# Layer Two Tunneling Protocol
 ddx	116	DDX		# D-II Data Exchange
 iatp	117	IATP		# Interactive Agent Transfer Protocol
-st	118	ST		# Schedule Transfer
+stp	118	STP		# Schedule Transfer Protocol
 srp	119	SRP		# SpectraLink Radio Protocol
 uti	120	UTI		# UTI
 smp	121	SMP		# Simple Message Protocol
@@ -141,7 +141,16 @@ sps	130	SPS		# Secure Packet Shield
 pipe	131	PIPE		# Private IP Encapsulation within IP
 sctp	132	SCTP		# Stream Control Transmission Protocol
 fc	133	FC		# Fibre Channel
-#	134-254			# Unassigned
+rsvp-e2e-ignore	134	RSVP-E2E-IGNORE		# RFC3175
+#	134			# Unassigned
+udplite	136	UDPLite		# RFC3828
+mpls-in-ip	137	MPLS-in-IP		# RFC4023
+manet	138	manet		# MANET Protocols
+hip	139	HIP		# Host Identity Protocol
+shim6	140	Shim6		# Shim6 Protocol
+#	141-252			# Unassigned [IANA]
 pfsync	240	PFSYNC		# PF Synchronization
+#	253			# Use for experimentation and testing
+#	254			# Use for experimentation and testing
 #	255			# Reserved
 divert	258	DIVERT		# Divert pseudo-protocol [non IANA]
