@@ -51,7 +51,7 @@ else
 	# Setup a bland default prompt.  Since this prompt should be useable
 	# on color and non-color terminals, as well as shells that don't
 	# understand sequences such as \h, don't put anything special in it.
-	PS1="${USER:-$(type whoami >/dev/null && whoami)}@$(type uname >/dev/null && uname -n) \$ "
+	PS1="${USER:-$(whoami 2>/dev/null)}@$(uname -n 2>/dev/null) \$ "
 fi
 
 for sh in /etc/profile.d/*.sh ; do
