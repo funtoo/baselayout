@@ -18,6 +18,7 @@ cdrom::19:
 dialout::20:
 tape::26:root
 video::27:root
+plugdev::28:
 cdrw::80:
 usb::85:
 input::97:
