@@ -5,6 +5,7 @@
 /bin/esh
 /bin/fish
 /bin/ksh
+/bin/mksh
 /bin/sash
 /bin/sh
 /bin/tcsh

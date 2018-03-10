@@ -22,7 +22,7 @@ plugdev::28:
 cdrw::80:
 usb::85:
 input::97:
-users::100:games
+users::100:
 portage::250:portage
 utmp:x:406:
 nogroup::65533:
